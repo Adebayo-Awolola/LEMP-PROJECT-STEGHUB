@@ -112,4 +112,4 @@ You will see the page below if successful.
 ![image](https://github.com/user-attachments/assets/18f4e311-6d25-4624-8087-8b4d2829787b)
 
 
-##Check the LEMP project file for testing the PHP and MYSQL process.
+##Check the LEMP projectdocs for steps on testing MYSQL process.
