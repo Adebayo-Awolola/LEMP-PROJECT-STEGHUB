@@ -7,29 +7,43 @@ This project demonstrates the implementation of a LEMP stack to create a dynamic
 ### Project Setup
 * **EC2 Instance:** Created a t2.micro EC2 instance in the us-east-1 region and logged in to it using the gitbash. The gitbash gives additional flexibility.
 * **OS Installation:** Installed Ubuntu Server 22.04 LTS.
+* 
 ![image](https://github.com/user-attachments/assets/ca0ce100-53b6-479a-ab80-1c59657a2dc6)
+
+
 * **Nginx Installation:**
   ```bash
   sudo apt update
   sudo apt install nginx
 When prompted type yes.
 You will see this after a successful installation.
+
 ![image](https://github.com/user-attachments/assets/d38377ec-aa61-44cb-a587-f34b6639f8cc)
+
 ## To verify the ngix server is running. Run the command “sudo systemctl status nginx”
+
 ![image](https://github.com/user-attachments/assets/5f178b46-cd4c-4b21-bd9a-5d81f90185f5)
+
 
 To access the webserver you must ensure port 80 of your ec2 instance is enabled.
 You can test connectivity to the webserver locally from your git bash terminal or putty terminal by using http://127.0.0.1:80.
+
 ![image](https://github.com/user-attachments/assets/c8e299f8-3751-4ab6-a20c-61e39f43dd6d)
+
+
 You can also test it through a browser by typing http://3.81.137.58. Replace it with the public IP address of your ec2 instance.
 If you see the image below, this means you have successfully installed your server and completed the second implementation of the stack “LE”
+
 ![image](https://github.com/user-attachments/assets/3a3a91ac-f727-489d-a32c-df1cf4a1f4d5)
+
 ##Installing mysql which is the third component on the stack. 
 You need to install a Database Management System (DBMS) to be able to store and manage data for your site in a relational database.
 #$ sudo apt install MySQL-server
 #Enter yes to continue the installation if prompted
 After Installation, your screen should look like this.
+
 ![image](https://github.com/user-attachments/assets/ab7f28d7-1975-4c6b-a885-637e30e9f95b)
+
 Type the “sudo mysql” command to log in to mysql console and you will see the prompt changed from ubuntu to mysql. You are also connected as an administrative database root user.
 You can also run the security script which comes pre-installed with mysql to give your database a baseline security.
 First change the root password, using the command 
@@ -43,7 +57,9 @@ For other prompts click yes.
  Test if you’re able to log in to the MySQL console by typing:
 ##$ sudo mysql -p
 Now you have completed the installation of mysql, let's install PHP.
+
 ![image](https://github.com/user-attachments/assets/2b1cf982-4784-4d7e-8700-f5354fbe8458)
+
 ##Installation of PHP
 install PHP to process code and generate dynamic content for the web server.
 One major thing to note is Apache has a PHP interpreter, and nginx needs an external PHP interpreter which will be installed during this installation. Also, we will install php-mysql to facilitate communication between php and the mysql database
