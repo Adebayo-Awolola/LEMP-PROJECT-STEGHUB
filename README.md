@@ -17,6 +17,7 @@ You will see this after a successful installation.
 ![image](https://github.com/user-attachments/assets/d38377ec-aa61-44cb-a587-f34b6639f8cc)
 ## To verify the ngix server is running. Run the command “sudo systemctl status nginx”
 ![image](https://github.com/user-attachments/assets/5f178b46-cd4c-4b21-bd9a-5d81f90185f5)
+
 To access the webserver you must ensure port 80 of your ec2 instance is enabled.
 You can test connectivity to the webserver locally from your git bash terminal or putty terminal by using http://127.0.0.1:80.
 ![image](https://github.com/user-attachments/assets/c8e299f8-3751-4ab6-a20c-61e39f43dd6d)
